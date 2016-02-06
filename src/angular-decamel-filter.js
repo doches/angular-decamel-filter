@@ -7,12 +7,13 @@
 
 angular.module('te.decamel', [])
     .filter("decamel", function() {
-         return function(input, delimiter = " ", capitalize = true) {
+         return function(input, delimiter, noCapitalize) {
              input = input || "";
+             delimiter = delimiter || " ";
 
              var words = input.match(/[A-Za-z][a-z]*/g);
              var out = words;
-             if (capitalize) {
+             if (!noCapitalize) {
                  out = out.map(function (word) {
                      return word.charAt(0).toUpperCase() + word.substring(1);
                  });
