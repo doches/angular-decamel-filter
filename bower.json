@@ -1,0 +1,28 @@
+{
+  "name": "angular-decamel-filter",
+  "main": "dist/angular-decamel-filter.js",
+  "description": "An AngularJS filter for converting 'camelCaseStrings' to 'Camel Case Strings'",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doches/angular-decamel-filter.git"
+  },
+  "dependencies": {
+    "angular": "*"
+  },
+  "devDependencies": {
+    "angular-mocks": "*"
+  },
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "package.json",
+    "lib",
+    "test",
+    "src",
+    "Gruntfile.js",
+    ".gitignore",
+    "README.md",
+    "travis.yml",
+    ".bowercc"
+  ]
+}
